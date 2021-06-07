@@ -32,9 +32,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
             
-       - name: Upload to blob storage
-         uses: azure/CLI@v1
-         with:
+      - name: Upload to blob storage
+      - uses: azure/CLI@v1
+        with:
            azcliversion: 2.0.72
            inlineScript: |
               az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> -d '$web' -s .
