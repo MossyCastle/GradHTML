@@ -31,13 +31,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-            
+       # upload the html stuff       
       - name: Upload to blob storage
       - uses: azure/CLI@v1
         with:
-           azcliversion: 2.0.72
-           inlineScript: |
-              az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> -d '$web' -s .
+             azcliversion: 2.0.72
+             inlineScript: |
+                az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> -d '$web' -s .
   #    - name: Purge CDN endpoint
   #      uses: azure/CLI@v1
   #      with:
@@ -46,8 +46,8 @@ jobs:
   #         az cdn endpoint purge --content-paths  "/*" --profile-name "CDN_PROFILE_NAME" --name "CDN_ENDPOINT" --resource-group "RESOURCE_GROUP"
   
      
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+         # Runs a set of commands using the runners shell
+      # - name: Run a multi-line script
+      #   run: |
+      #      echo Add other actions to build,
+      #      echo test, and deploy your project.
