@@ -37,7 +37,7 @@ jobs:
         with:
              azcliversion: 2.0.72
              inlineScript: |
-                az storage blob upload-batch --account-name <STORAGE_ACCOUNT_NAME> -d '$web' -s .
+                az storage blob upload-batch --account-name gradwebsite -d '$web' -s .
 
   #    - name: Purge CDN endpoint
   #      uses: azure/CLI@v1
