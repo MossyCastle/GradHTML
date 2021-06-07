@@ -29,11 +29,11 @@ jobs:
              creds: ${{ secrets.AZURE_CREDENTIALS }}
          
       # Runs a single command using the runners shell
-      #- name: Run a one-line script
-      #  run: echo Hello, world!
+      - name: Run a one-line script
+        run: echo Hello, world!
       # upload the html stuff       
       - name: Upload to blob storage
-      - uses: azure/CLI@v1
+        uses: azure/CLI@v1
         with:
              azcliversion: 2.0.72
              inlineScript: |
