@@ -2,4 +2,4 @@
 
 
 Crete RBACaccount
-az ad sp create-for-rbac --name {myStaticSite} --role contributor --scopes /subscriptions/{subscription-id}/resourceGroups/{resource-group} --sdk-auth
+az ad sp create-for-rbac --name gradwebite --role contributor --scopes /subscriptions/c30633ef-4591-4126-8676-4b4468cc3444/resourceGroups/GradRG --sdk-auth
